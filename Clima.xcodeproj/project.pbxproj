@@ -13,6 +13,8 @@
 		93F584D52B9B38C200A8C030 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F584D32B9B38C200A8C030 /* Main.storyboard */; };
 		93F584D72B9B38C500A8C030 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F584D62B9B38C500A8C030 /* Assets.xcassets */; };
 		93F584DA2B9B38C500A8C030 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F584D82B9B38C500A8C030 /* LaunchScreen.storyboard */; };
+		93F584E22B9B3A2F00A8C030 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F584E12B9B3A2E00A8C030 /* Constants.swift */; };
+		93F584E52B9B3BD200A8C030 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 93F584E42B9B3BD200A8C030 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		93F584D62B9B38C500A8C030 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93F584D92B9B38C500A8C030 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93F584DB2B9B38C500A8C030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93F584E12B9B3A2E00A8C030 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93F584E52B9B3BD200A8C030 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 				93F584D62B9B38C500A8C030 /* Assets.xcassets */,
 				93F584D82B9B38C500A8C030 /* LaunchScreen.storyboard */,
 				93F584DB2B9B38C500A8C030 /* Info.plist */,
+				93F584E12B9B3A2E00A8C030 /* Constants.swift */,
 			);
 			path = Clima;
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = Clima;
+			packageProductDependencies = (
+				93F584E42B9B3BD200A8C030 /* SnapKit */,
+			);
 			productName = Clima;
 			productReference = 93F584CA2B9B38C200A8C030 /* Clima.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 93F584C12B9B38C200A8C030;
+			packageReferences = (
+				93F584E32B9B3BD200A8C030 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 93F584CB2B9B38C200A8C030 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,6 +152,7 @@
 				93F584D22B9B38C200A8C030 /* ViewController.swift in Sources */,
 				93F584CE2B9B38C200A8C030 /* AppDelegate.swift in Sources */,
 				93F584D02B9B38C200A8C030 /* SceneDelegate.swift in Sources */,
+				93F584E22B9B3A2F00A8C030 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +381,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		93F584E32B9B3BD200A8C030 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		93F584E42B9B3BD200A8C030 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93F584E32B9B3BD200A8C030 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 93F584C22B9B38C200A8C030 /* Project object */;
 }
